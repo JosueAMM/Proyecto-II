@@ -45,7 +45,11 @@ public class AdapterMensaje extends RecyclerView.Adapter<HolderMensaje> {
             holder.getMensaje().setVisibility(View.VISIBLE);
             Glide.with(c).load(listMensaje.get(position).getUrlFoto()).into(holder.getFotoMensaje());
         }else if(listMensaje.get(position).getType_mensaje().equals("1")){
+<<<<<<< HEAD
             holder.getFotoMensaje().setVisibility(View.GONE);
+=======
+                holder.getFotoMensaje().setVisibility(View.GONE);
+>>>>>>> 5665aa0... version 3
             holder.getMensaje().setVisibility(View.VISIBLE);
         }
         if(listMensaje.get(position).getFotoPerfil().isEmpty()){

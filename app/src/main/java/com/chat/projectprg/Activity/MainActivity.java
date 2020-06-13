@@ -199,7 +199,11 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         try {
             if (requestCode == PHOTO_SEND && resultCode == RESULT_OK) {
+<<<<<<< HEAD
                 Uri u = data.getData();
+=======
+                               Uri u = data.getData();
+>>>>>>> 5665aa0... version 3
 
                 storageReference = storage.getReference("imagenes_mensajeria");
                 final StorageReference referenciaFoto = storageReference.child("image " + u.getLastPathSegment());
